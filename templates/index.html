@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car Bodytype </title>
+    <link rel="stylesheet" href="./static/stylesheet.css">
+</head>
+<body>
+    <header>   
+        <a class="header-logo" href="#">Car Bodytype </a>
+        
+        
+    </header>
+
+    <div class="main">    
+        <h2> あなたの車のボディタイプを6種類(軽自動車,ミニバン,セダン,スポーツカー,SUV,トラック)に判別します。</h2>
+        <p>画像を送信してください</p>
+        <form method="POST" enctype="multipart/form-data">
+            <input class="file_choose" type="file" name="file">
+            <input class="btn" value="submit!" type="submit">
+        </form>
+        <div class="answer">{{answer}}</div>
+        <img class="image" src="{{images}}">
+    </div>
+
+    <footer>
+        
+        <small>&copy; 2021 Takamasa Murata</small>   
+    </footer>
+</body>
+</html>
